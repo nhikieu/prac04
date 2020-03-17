@@ -1,6 +1,8 @@
 package movieListQuestion;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import movieListAnswer.MovieList;
 import org.junit.jupiter.api.*;
 
 /* The following tests are for the basic functionality of
@@ -21,7 +23,7 @@ public class MovieListTest {
 	/* Test 0: Declaring MovieList objects
 	 * [This test obliges you to create a class called "MovieList".]
 	 */
-//	MovieList movies;
+MovieList movies;
 
 
 	/* Test 1: Constructing a MovieList object
