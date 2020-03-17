@@ -113,4 +113,19 @@ MovieList movies;
 			movies.setRating("Them!", 4);
 		});
 	}
+
+	/* Test 10: Set a rating using thumbs
+	 */
+	@Test
+	public void setThumbsRating() throws MovieListException{
+		movies.addMovie("Joker");
+		movies.setThumbRating("Joker", 2);
+		movies.addMovie("IT");
+		movies.setThumbRating("IT", -2);
+		assertEquals("Two thumbs up", movies.getRating("Joker"));
+		assertEquals("Two thumbs down", movies.getRating("IT"));
+		movies.addMovie("The Flu");
+		movies.setRating("The Flu", 2);
+		assertEquals("**", movies.getRating("The Flu"));
+	}
 }
